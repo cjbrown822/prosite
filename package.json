@@ -1,0 +1,14 @@
+{
+  "name": "prosite",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "npm run dev --prefix server",
+    "csm" : "npm start --prefix csm",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run csm\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
